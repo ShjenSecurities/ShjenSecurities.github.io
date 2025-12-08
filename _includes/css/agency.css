@@ -244,10 +244,6 @@ fieldset[disabled] .btn-xl.active {
         transition: padding .3s;
     }
 
-    .timeline .timeline-heading {
-        margin-top: 10px;
-    }
-
     .navbar-default .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
