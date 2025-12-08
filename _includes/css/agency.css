@@ -62,7 +62,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #1b1b1b;
 }
 
 .bg-darkest-gray {
@@ -269,7 +269,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: url('{{ site.baseurl }}/img/CleanLines.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -324,14 +324,19 @@ header .intro-text .intro-heading {
     }
 }
 
-section {
-    padding: 100px 0;
+.text-white {
+    color: #fff;
+}
+
+.text-light-grey {
+    color: #a6a6a6
 }
 
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    color: #fff;
 }
 
 section h3.section-subheading {
@@ -341,6 +346,7 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
+    color: #a6a6a6;
 }
 
 @media(min-width:768px) {
@@ -352,6 +358,7 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    color: #a6a6a6
 }
 
 #portfolio .portfolio-item {
@@ -533,7 +540,7 @@ section h3.section-subheading {
 
 .timeline .timeline-heading h4 {
     margin-top: 0;
-    color: inherit;
+    color: #fff;
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -724,6 +731,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #000000;
 }
 
 footer span.copyright {
@@ -731,6 +739,7 @@ footer span.copyright {
     text-transform: none;
     font-family: {{ site.data.template.font.primary }};
     line-height: 40px;
+    color: #7a7a7a;
 }
 
 footer ul.quicklinks {
