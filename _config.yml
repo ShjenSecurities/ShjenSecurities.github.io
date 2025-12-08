@@ -4,7 +4,7 @@ baseurl: ""
 # Site settings
 title: Shjen Securities
 email: shjensecurities@protonmail.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Shjen Securities -- Cybersecurity services for Steamboat Springs."
 
 
 # Team names, titles and social links
@@ -12,7 +12,13 @@ people:
 - name:
   pic:
   position:
-
+  social:
+    - title:
+      url: #
+    - title:
+      url: #
+    - title:
+      url: #
 
 - name: Ayric Ingram
   pic: 2
