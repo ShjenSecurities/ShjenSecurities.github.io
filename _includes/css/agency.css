@@ -535,7 +535,7 @@ section h3.section-subheading {
 }
 
 .timeline>li:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 
 .timeline .timeline-heading h4 {
