@@ -17,9 +17,9 @@ require 'PHPMailer/SMTP.php';
 
 // 2. SMTP Configuration (Required for sending email)
 // Replace these four placeholder values with your SMTP details
-define('SMTP_HOST',    'smtp.protonmail.com');  // e.g., 'smtp.sendgrid.net' or 'smtp.protonmail.com'
-define('SMTP_USERNAME', 'shjensecurities@protonmail.com'); // Your full sending email address
-define('SMTP_PASSWORD', 'YOUR_SMTP_APP_PASSWORD'); // IMPORTANT: Use an App Password/SMTP password
+define('SMTP_HOST',    'smtp.protonmail.ch');  // e.g., 'smtp.sendgrid.net' or 'smtp.protonmail.com'
+define('SMTP_USERNAME', 'mail@shjensecurities.tech'); // Your full sending email address
+define('SMTP_PASSWORD', 'RG62RRU6GNBDN19M'); // IMPORTANT: Use an App Password/SMTP password
 define('SMTP_PORT',    587); // e.g., 587 (TLS) or 465 (SSL)
 define('CONTACT_EMAIL', 'shjensecurities@protonmail.com'); // Destination email (where messages are sent)
 define('SENDER_EMAIL',  'noreply@shjensecurites.tech'); // The "From" address for your emails
