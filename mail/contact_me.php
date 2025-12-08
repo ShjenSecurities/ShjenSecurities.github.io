@@ -6,8 +6,9 @@ if(empty($_POST['name'])  		||
    empty($_POST['message'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
-	echo "No arguments Provided!";
-	return false;
+	http_response_code(400);
+      echo "No arguments Provided!";
+      return false;
    }
 
 // Sanitize input data to prevent XSS attacks
