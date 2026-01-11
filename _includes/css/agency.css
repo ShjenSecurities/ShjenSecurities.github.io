@@ -265,6 +265,21 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+/* Force the header to have its dark background and remove the bottom line */
+.navbar-default.navbar-static-top {
+    background-color: #222 !important;
+    padding: 15px 0 !important;
+    border-bottom: none !important;    /* Removes the bottom white line */
+    margin-bottom: 0 !important;       /* Ensures no gap exists below the bar */
+    box-shadow: none !important;       /* Removes any subtle shadow that looks like a line */
+}
+
+/* Ensure the logo stays the right size */
+.navbar-static-top .navbar-brand img {
+    height: 45px !important; /* Adjust this to match your preferred size */
+    width: auto;
+}
+
 header {
     text-align: center;
     color: #fff;
@@ -874,3 +889,4 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
