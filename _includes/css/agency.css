@@ -678,6 +678,10 @@ aside.clients img {
     margin: 50px auto;
 }
 
+
+
+/*
+
 section#contact {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/map-image.png');
@@ -742,6 +746,8 @@ section#contact:-ms-input-placeholder {
 section#contact .text-danger {
     color: #e74c3c;
 }
+
+*/
 
 footer {
     padding: 25px 0;
@@ -890,3 +896,19 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
+/* Reveal Logic */
+#contact-details-nojs { display: none; }
+#reveal-toggle:checked ~ #contact-details-nojs { display: block; }
+#reveal-toggle:checked ~ #reveal-label { display: none; }
+
+/* Obfuscation Flip */
+.reverse-obfuscate {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+}
+
+/* Match Agency Font */
+#reveal-label:hover {
+color: #fec503; /* Slightly darker gold on hover to match theme buttons */
+}
