@@ -1,4 +1,4 @@
-url: https://ShjenSecurities.github.io
+url: https://www.shjensecurities.tech
 baseurl: ""
 
 # Site settings
@@ -9,37 +9,11 @@ description: "Shjen Securities -- Cybersecurity services for Steamboat Springs."
 
 # Team names, titles and social links
 people:
-- name:
-  pic:
-  position:
-  social:
-    - title:
-      url: #
-    - title:
-      url: #
-    - title:
-      url: #
-
 - name: Ayric Ingram
   pic: 2
   position: C.E.O.
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
     - title: linkedin
-      url: #
-
-- name:
-  pic:
-  position:
-  social:
-    - title:
-      url: #
-    - title:
-      url: #
-    - title:
       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
