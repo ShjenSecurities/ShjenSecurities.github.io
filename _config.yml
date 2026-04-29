@@ -3,8 +3,9 @@ baseurl: ""
 
 # Site settings
 title: Shjen Securities
-email: shjensecurities@protonmail.com
-description: "Shjen Securities -- Cybersecurity services for Steamboat Springs."
+seo_title: "Shjen Securities | Cybersecurity for Steamboat Springs, CO"
+email: info@shjensecurities.tech
+description: "Shjen Securities provides network hardening, password management, and IT infrastructure for homes and small businesses in Steamboat Springs, CO."
 
 
 # Team names, titles and social links

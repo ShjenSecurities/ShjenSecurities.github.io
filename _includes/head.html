@@ -1,21 +1,68 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.seo_title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ site.seo_title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.url }}/img/hacker-hero.jpg">
 
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ site.seo_title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/img/hacker-hero.jpg">
+
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Shjen Securities",
+      "description": "{{ site.description }}",
+      "url": "{{ site.url }}",
+      "telephone": "+19703674280",
+      "email": "info@shjensecurities.tech",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "322 Riverview Way Apt. 211",
+        "addressLocality": "Steamboat Springs",
+        "addressRegion": "CO",
+        "postalCode": "80487",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Steamboat Springs"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cybersecurity Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Network Hardening" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Password Management" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Infrastructure" } }
+        ]
+      },
+      "founder": { "@type": "Person", "name": "Ayric Ingram" },
+      "foundingDate": "2023",
+      "image": "{{ site.url }}/img/ShjenSecuritiesTransparent.png"
+    }
+    </script>
+
+    <!-- Custom CSS & Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
