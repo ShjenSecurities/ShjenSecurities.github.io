@@ -15,7 +15,7 @@ defaults:
       path: ""
       type: "ramen"
     values:
-      layout: "entry"
+      layout: "ramen-entry"
 
 # Build settings
 markdown: kramdown

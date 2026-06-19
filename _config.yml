@@ -31,6 +31,20 @@ social:
     url: http://github.com/jekyll
 
 
+# Ramen Safari collection (lives in Ramensafari/)
+collections_dir: Ramensafari
+collections:
+  ramen:
+    output: true
+    permalink: /ramen/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "ramen"
+    values:
+      layout: "ramen-entry"
+
 # Build settings
 markdown: kramdown
 permalink: pretty

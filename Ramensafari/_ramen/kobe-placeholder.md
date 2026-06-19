@@ -1,5 +1,5 @@
 ---
-layout: entry
+layout: ramen-entry
 title: "Kobe"
 slug: "kobe-placeholder"
 placeholder: true

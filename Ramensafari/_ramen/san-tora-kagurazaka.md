@@ -1,5 +1,5 @@
 ---
-layout: entry
+layout: ramen-entry
 title: "San Tora"
 slug: "san-tora-kagurazaka"
 placeholder: false

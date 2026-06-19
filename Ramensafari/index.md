@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: ramen-default
 title: "Ramen Safari"
+permalink: /ramen/
 ---
 
 {% assign entries = site.ramen | where_exp: "entry", "entry.placeholder != true" | sort: "style_order" | sort: "city_order" %}
