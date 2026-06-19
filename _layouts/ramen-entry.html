@@ -105,7 +105,8 @@
       {% endfor %}
 
       {% if current_index > 0 %}
-        {% assign prev = all_entries[current_index | minus: 1] %}
+        {% assign prev_index = current_index | minus: 1 %}
+        {% assign prev = all_entries[prev_index] %}
         <a href="{{ prev.url }}" class="nav-prev">← {{ prev.title }}</a>
       {% endif %}
 

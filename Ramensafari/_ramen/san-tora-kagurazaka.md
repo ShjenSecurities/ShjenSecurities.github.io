@@ -2,7 +2,6 @@
 layout: ramen-entry
 title: "San Tora"
 slug: "san-tora-kagurazaka"
-placeholder: false
 location:
   city: "Tokyo"
   city_ja: "東京"
