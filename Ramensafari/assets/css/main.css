@@ -142,8 +142,17 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
   padding: var(--space-md) var(--space-lg);
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: var(--space-lg);
+}
+
+.header-animation {
+  margin-left: auto;
+  width: 90px;
+  height: 90px;
+  border: none;
+  background: transparent;
+  flex-shrink: 0;
 }
 
 .site-title {
@@ -468,6 +477,7 @@ a:hover { text-decoration: underline; }
     gap: var(--space-xs);
   }
   .site-nav { width: 100%; }
+  .header-animation { display: none; }
 
   /* Main content */
   .site-main { padding: var(--space-lg) var(--space-md); }
