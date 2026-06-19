@@ -188,6 +188,7 @@ a:hover { text-decoration: underline; }
   margin-bottom: var(--space-xl);
   color: var(--muted);
   font-style: italic;
+  text-align: center;
 }
 
 .city-section {
