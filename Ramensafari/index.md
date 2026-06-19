@@ -9,7 +9,7 @@ permalink: /ramen/
 
 <div class="index-intro">
   <p>A handwritten record of a self-guided Ramen Safari across five cities in Japan.</p>
-  <p class="intro-ja">日本五都市で食べた十五杯の手書き記録</p>
+  <p class="intro-ja">日本五都市を巡る自己案内ラーメン紀行の手書き記録</p>
 </div>
 
 {% for city_group in city_groups %}

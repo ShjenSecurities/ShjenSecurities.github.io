@@ -283,6 +283,7 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
   margin-top: 0.3em;
   font-style: normal;
+  text-align: center;
 }
 
 .location-ja {
