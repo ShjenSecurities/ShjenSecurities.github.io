@@ -5,13 +5,13 @@
 
 /* --- Tokens --- */
 :root {
-  --ink:         #1a1612;       /* deep warm black — like fountain pen ink */
-  --paper:       #f7f4ef;       /* off-white, not clinical */
-  --paper-rule:  #e8e3da;       /* ruled line color */
-  --accent:      #b85c2a;       /* burnt sienna — ramen broth warmth */
-  --accent-soft: #e8c9b0;       /* pale version for tags */
-  --muted:       #7a6f65;       /* secondary text */
-  --border:      #d4cdc4;
+  --ink:         #ede5d8;       /* warm off-white — text on dark */
+  --paper:       #1c1814;       /* deep warm near-black — background */
+  --paper-rule:  #2a2420;       /* subtle dark divider */
+  --accent:      #c97a45;       /* burnt sienna, brightened for dark bg */
+  --accent-soft: #2e1e14;       /* dark warm for tags */
+  --muted:       #8a7f75;       /* secondary text */
+  --border:      #2e2820;       /* dark warm border */
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-accent:  'Shippori Mincho', Georgia, serif;
@@ -25,6 +25,9 @@
 
   --max-width: 780px;
 }
+
+/* --- Color scheme --- */
+:root { color-scheme: dark; }
 
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
