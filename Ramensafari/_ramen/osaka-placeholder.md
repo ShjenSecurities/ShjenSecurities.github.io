@@ -1,13 +1,13 @@
 ---
 layout: ramen-entry
-title: "Kobe"
-slug: "kobe-placeholder"
+title: "Osaka"
+slug: "osaka-placeholder"
 placeholder: true
 location:
-  city: "Kobe"
-  city_ja: "神戸"
+  city: "Osaka"
+  city_ja: "大阪"
   region: "Kansai"
   region_ja: "関西"
   neighborhood: ""
-city_order: 4
+city_order: 2
 ---

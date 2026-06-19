@@ -50,13 +50,13 @@ permalink: /ramen/
   </section>
 {% endfor %}
 
-{% assign kobe = site.ramen | where: "placeholder", true | first %}
-{% if kobe %}
+{% assign placeholders = site.ramen | where: "placeholder", true | sort: "city_order" %}
+{% for ph in placeholders %}
 <section class="city-section city-placeholder">
   <div class="city-header">
-    <h2>Kobe<span class="name-ja">神戸</span></h2>
-    <span class="region-label">Kansai<span class="name-ja">関西</span></span>
+    <h2>{{ ph.location.city }}{% if ph.location.city_ja %}<span class="name-ja">{{ ph.location.city_ja }}</span>{% endif %}</h2>
+    <span class="region-label">{{ ph.location.region }}{% if ph.location.region_ja %}<span class="name-ja">{{ ph.location.region_ja }}</span>{% endif %}</span>
   </div>
   <p class="placeholder-note">Entry pending. <span class="name-ja">記録準備中</span></p>
 </section>
-{% endif %}
+{% endfor %}
