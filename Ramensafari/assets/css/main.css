@@ -459,10 +459,36 @@ a:hover { text-decoration: underline; }
 
 /* --- Responsive --- */
 @media (max-width: 600px) {
-  .site-header { padding: var(--space-sm) var(--space-md); }
-  .site-main   { padding: var(--space-lg) var(--space-md); }
+  /* Header */
+  .site-header {
+    padding: var(--space-sm) var(--space-md);
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+  }
+  .site-nav { width: 100%; }
+
+  /* Main content */
+  .site-main { padding: var(--space-lg) var(--space-md); }
+
+  /* Index */
   .city-header h2 { font-size: 1.25rem; }
+
+  /* Entry meta */
   .entry-meta { flex-direction: column; gap: var(--space-xs); }
+
+  /* Password gate */
+  .rs-gate-title { font-size: 1.75rem; }
+  .rs-gate-form  { flex-direction: column; width: 220px; }
+  #rs-pass       { width: 100%; text-align: left; }
+  #rs-submit     { width: 100%; padding: 0.5rem; }
+
+  /* Photo spacing */
+  .lead-photo-wrap  { margin-bottom: var(--space-lg); }
+  .entry-photos     { gap: var(--space-lg); margin-top: var(--space-lg); }
+
+  /* Stack the detail photo grid vertically */
+  .entry-photo-grid             { flex-direction: column; gap: var(--space-lg); }
+  .entry-photo-grid .entry-photo { aspect-ratio: auto; }
 }
 
 /* --- Reduced motion --- */
