@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — Ramen Safari</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="{{ '/' | prepend: site.baseurl }}" class="site-title">Ramen Safari</a>
+  </header>
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>A personal record. Not for public distribution.</p>
+  </footer>
+
+</body>
+</html>

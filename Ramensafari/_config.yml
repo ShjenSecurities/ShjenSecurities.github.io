@@ -1,0 +1,29 @@
+title: "Ramen Safari"
+description: "A handwritten record of ramen eaten across Japan."
+baseurl: "/ramen"
+url: "https://shjensecurities.tech"
+
+# Collections
+collections:
+  ramen:
+    output: true
+    permalink: /ramen/:slug/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "ramen"
+    values:
+      layout: "entry"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

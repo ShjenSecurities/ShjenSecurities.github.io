@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — Ramen Safari</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="{{ '/' | prepend: site.baseurl }}" class="site-title">Ramen Safari</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | prepend: site.baseurl }}">← All Entries</a>
+    </nav>
+  </header>
+
+  <main class="site-main entry-main">
+
+    <div class="entry-meta">
+      <div class="entry-location">
+        <span class="neighborhood">{{ page.location.neighborhood }}</span>
+        <span class="city">{{ page.location.city }}</span>
+        <span class="region">{{ page.location.region }}</span>
+      </div>
+      <div class="entry-style">
+        <span class="ramen-style">{{ page.ramen_style }}</span>
+        {% if page.ramen_substyle and page.ramen_substyle != "" %}
+          <span class="ramen-substyle">{{ page.ramen_substyle }}</span>
+        {% endif %}
+      </div>
+      {% if page.restaurant %}
+        <div class="entry-restaurant">{{ page.restaurant }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Handwritten page as primary content -->
+    <div class="page-image-wrap">
+      <img
+        src="{{ page.page_image | prepend: site.url }}"
+        alt="Handwritten entry for {{ page.title }}"
+        class="page-image"
+        loading="lazy"
+      >
+    </div>
+
+    <!-- Hidden transcription for accessibility and search -->
+    {% if content and content != "" %}
+    <div class="entry-transcription" aria-label="Text transcription of handwritten entry">
+      <details>
+        <summary>Read transcription</summary>
+        <div class="transcription-body">
+          {{ content }}
+        </div>
+      </details>
+    </div>
+    {% endif %}
+
+    <!-- Entry navigation -->
+    <nav class="entry-nav">
+      {% assign all_entries = site.ramen | where_exp: "e", "e.placeholder != true" | sort: "style_order" | sort: "city_order" %}
+      {% assign entry_count = all_entries | size %}
+      {% for e in all_entries %}
+        {% if e.slug == page.slug %}
+          {% assign current_index = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if current_index > 0 %}
+        {% assign prev = all_entries[current_index | minus: 1] %}
+        <a href="{{ prev.url | prepend: site.baseurl }}" class="nav-prev">← {{ prev.title }}</a>
+      {% endif %}
+
+      {% assign next_index = current_index | plus: 1 %}
+      {% if next_index < entry_count %}
+        {% assign next = all_entries[next_index] %}
+        <a href="{{ next.url | prepend: site.baseurl }}" class="nav-next">{{ next.title }} →</a>
+      {% endif %}
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>A personal record. Not for public distribution.</p>
+  </footer>
+
+</body>
+</html>
