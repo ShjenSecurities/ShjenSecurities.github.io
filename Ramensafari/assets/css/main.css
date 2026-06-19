@@ -221,6 +221,20 @@ a:hover { text-decoration: underline; }
   width: 100%;
 }
 
+/* Lead photo — scene-setter above the journal page */
+.lead-photo-wrap {
+  margin-bottom: var(--space-xl);
+}
+
+.lead-photo {
+  width: 100%;
+  height: auto;
+  max-height: 72vh;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 /* Handwritten page image — the hero */
 .page-image-wrap {
   margin: 0 auto;
@@ -233,6 +247,20 @@ a:hover { text-decoration: underline; }
   display: block;
   border: 1px solid var(--border);
   box-shadow: 0 2px 12px rgba(26,22,18,0.08);
+}
+
+/* Photo sequence below the journal page */
+.entry-photos {
+  margin-top: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.entry-photo {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Transcription toggle */

@@ -13,6 +13,11 @@ ramen_style: "Tonkotsu"
 ramen_substyle: ""
 restaurant: "San Tora"
 page_image: "/img/ramen/SanTora-1.png"
+lead_photo: "/img/ramen/SanToraEntry.jpg"
+photos:
+  - "/img/ramen/SanToraRamen.jpg"
+  - "/img/ramen/SanToraEgg.jpg"
+  - "/img/ramen/SanToraEmptyBowl.jpg"
 ---
 
 My first ramen in Japan. Upon arrival in Tokyo, I took my time getting acquainted to the famously intricate subway lines.

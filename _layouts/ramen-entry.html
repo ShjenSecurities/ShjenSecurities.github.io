@@ -34,6 +34,18 @@
       {% endif %}
     </div>
 
+    <!-- Lead photo: sets the scene before the journal page -->
+    {% if page.lead_photo %}
+    <div class="lead-photo-wrap">
+      <img
+        src="{{ page.lead_photo | prepend: site.url }}"
+        alt="{{ page.title }}"
+        class="lead-photo"
+        loading="eager"
+      >
+    </div>
+    {% endif %}
+
     <!-- Handwritten page as primary content -->
     <div class="page-image-wrap">
       <img
@@ -53,6 +65,20 @@
           {{ content }}
         </div>
       </details>
+    </div>
+    {% endif %}
+
+    <!-- Photo sequence: ramen → detail → empty bowl -->
+    {% if page.photos %}
+    <div class="entry-photos">
+      {% for photo in page.photos %}
+      <img
+        src="{{ photo | prepend: site.url }}"
+        alt=""
+        class="entry-photo"
+        loading="lazy"
+      >
+      {% endfor %}
     </div>
     {% endif %}
 
