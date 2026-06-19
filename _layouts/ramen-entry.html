@@ -83,17 +83,28 @@
     </div>
     {% endif %}
 
-    <!-- Photo sequence: ramen → detail → empty bowl -->
+    <!-- Photo sequence: first full-width, remaining as paired grid -->
     {% if page.photos %}
     <div class="entry-photos">
-      {% for photo in page.photos %}
       <img
-        src="{{ photo | prepend: site.url }}"
+        src="{{ page.photos[0] | prepend: site.url }}"
         alt=""
         class="entry-photo"
         loading="lazy"
       >
-      {% endfor %}
+      {% assign detail_photos = page.photos | slice: 1, 10 %}
+      {% if detail_photos.size > 0 %}
+      <div class="entry-photo-grid">
+        {% for photo in detail_photos %}
+        <img
+          src="{{ photo | prepend: site.url }}"
+          alt=""
+          class="entry-photo"
+          loading="lazy"
+        >
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
     {% endif %}
 

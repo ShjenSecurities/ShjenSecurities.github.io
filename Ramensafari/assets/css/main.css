@@ -6,12 +6,12 @@
 /* --- Tokens --- */
 :root {
   --ink:         #ede5d8;       /* warm off-white — text on dark */
-  --paper:       #1c1814;       /* deep warm near-black — background */
-  --paper-rule:  #2a2420;       /* subtle dark divider */
+  --paper:       #2a1f14;       /* dark espresso brown — background */
+  --paper-rule:  #3a2c20;       /* subtle divider */
   --accent:      #c97a45;       /* burnt sienna, brightened for dark bg */
-  --accent-soft: #2e1e14;       /* dark warm for tags */
+  --accent-soft: #3d2010;       /* dark warm for tags */
   --muted:       #8a7f75;       /* secondary text */
-  --border:      #2e2820;       /* dark warm border */
+  --border:      #3a2c20;       /* dark warm border */
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-accent:  'Shippori Mincho', Georgia, serif;
@@ -396,6 +396,18 @@ a:hover { text-decoration: underline; }
   width: 100%;
   height: auto;
   display: block;
+}
+
+.entry-photo-grid {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.entry-photo-grid .entry-photo {
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 /* Transcription toggle */
