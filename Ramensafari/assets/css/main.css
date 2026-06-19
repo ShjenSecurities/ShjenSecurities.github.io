@@ -294,7 +294,7 @@ a:hover { text-decoration: underline; }
 
 .ramen-style-ja {
   font-family: var(--font-accent);
-  font-size: 0.85em;
+  font-size: 0.8rem;
   color: var(--muted);
   margin-left: 0.3em;
 }
@@ -322,7 +322,7 @@ a:hover { text-decoration: underline; }
   font-family: var(--font-accent);
   display: flex;
   gap: var(--space-xs);
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--muted);
 }
 
@@ -337,7 +337,7 @@ a:hover { text-decoration: underline; }
 
 .ramen-style {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
   color: var(--ink);
 }
@@ -351,7 +351,8 @@ a:hover { text-decoration: underline; }
 }
 
 .entry-restaurant {
-  font-size: 0.8rem;
+  font-family: var(--font-accent);
+  font-size: 0.95rem;
   color: var(--muted);
   width: 100%;
 }
