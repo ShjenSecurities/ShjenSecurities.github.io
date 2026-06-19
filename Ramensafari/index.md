@@ -8,7 +8,7 @@ permalink: /ramen/
 {% assign city_groups = entries | group_by_exp: "entry", "entry.location.city" %}
 
 <div class="index-intro">
-  <p>A handwritten record of fifteen bowls eaten across five cities in Japan.</p>
+  <p>A handwritten record of a self-guided Ramen Safari across five cities in Japan.</p>
   <p class="intro-ja">日本五都市で食べた十五杯の手書き記録</p>
 </div>
 
