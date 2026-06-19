@@ -147,9 +147,8 @@ a:hover { text-decoration: underline; }
 }
 
 .header-animation {
-  margin-left: auto;
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border: none;
   background: transparent;
   flex-shrink: 0;
