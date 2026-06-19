@@ -1,0 +1,36 @@
+<div id="rs-gate">
+  <div class="rs-gate-inner">
+    <h1 class="rs-gate-title">Ramen Safari</h1>
+    <p class="rs-gate-subtitle">ラーメン紀行</p>
+    <div class="rs-gate-form">
+      <input type="password" id="rs-pass" placeholder="password" autocomplete="off" autofocus>
+      <button id="rs-submit">入る</button>
+    </div>
+    <p id="rs-error" class="rs-gate-error"></p>
+  </div>
+</div>
+<script>
+  (function() {
+    var k = 'rs_auth', p = 'Ram3nSafari!';
+    var gate = document.getElementById('rs-gate');
+    if (sessionStorage.getItem(k) === p) {
+      gate.style.display = 'none';
+      return;
+    }
+    var input = document.getElementById('rs-pass');
+    var error = document.getElementById('rs-error');
+    function attempt() {
+      if (input.value === p) {
+        sessionStorage.setItem(k, p);
+        gate.style.display = 'none';
+      } else {
+        error.textContent = 'Incorrect.';
+        input.value = '';
+        input.focus();
+        setTimeout(function() { window.location.replace('/'); }, 1500);
+      }
+    }
+    document.getElementById('rs-submit').addEventListener('click', attempt);
+    input.addEventListener('keydown', function(e) { if (e.key === 'Enter') attempt(); });
+  })();
+</script>
