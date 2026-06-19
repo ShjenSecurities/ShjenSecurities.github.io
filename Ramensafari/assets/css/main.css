@@ -66,6 +66,16 @@ a:hover { text-decoration: underline; }
 }
 .site-title:hover { text-decoration: none; color: var(--accent); }
 
+.title-ja {
+  font-family: var(--font-accent);
+  font-size: 0.58em;
+  display: block;
+  color: var(--muted);
+  font-style: normal;
+  letter-spacing: 0.12em;
+  margin-top: 0.15em;
+}
+
 .site-nav a {
   font-size: 0.875rem;
   color: var(--muted);
@@ -167,6 +177,37 @@ a:hover { text-decoration: underline; }
   color: var(--accent);
   padding: 0.1em 0.4em;
   border-radius: 2px;
+}
+
+/* Japanese companion labels — used inline next to EN text */
+.name-ja {
+  font-family: var(--font-accent);
+  font-size: 0.75em;
+  color: var(--muted);
+  margin-left: 0.4em;
+  font-weight: normal;
+}
+
+.intro-ja {
+  font-family: var(--font-accent);
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-top: 0.3em;
+  font-style: normal;
+}
+
+.location-ja {
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  color: var(--muted);
+  width: 100%;
+}
+
+.ramen-style-ja {
+  font-family: var(--font-accent);
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-left: 0.3em;
 }
 
 .city-placeholder .placeholder-note {
