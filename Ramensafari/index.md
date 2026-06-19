@@ -5,15 +5,16 @@ permalink: /ramen/
 ---
 
 {% assign entries = site.ramen | where_exp: "entry", "entry.placeholder != true" | sort: "style_order" | sort: "city_order" %}
-{% assign cities = entries | map: "location.city" | uniq %}
+{% assign city_groups = entries | group_by_exp: "entry", "entry.location.city" %}
 
 <div class="index-intro">
   <p>A handwritten record of fifteen bowls eaten across five cities in Japan.</p>
   <p class="intro-ja">日本五都市で食べた十五杯の手書き記録</p>
 </div>
 
-{% for city in cities %}
-  {% assign city_entries = entries | where: "location.city", city %}
+{% for city_group in city_groups %}
+  {% assign city = city_group.name %}
+  {% assign city_entries = city_group.items %}
   {% assign first = city_entries | first %}
 
   <section class="city-section">
@@ -22,9 +23,10 @@ permalink: /ramen/
       <span class="region-label">{{ first.location.region }}{% if first.location.region_ja %}<span class="name-ja">{{ first.location.region_ja }}</span>{% endif %}</span>
     </div>
 
-    {% assign styles = city_entries | map: "ramen_style" | uniq %}
-    {% for style in styles %}
-      {% assign style_entries = city_entries | where: "ramen_style", style %}
+    {% assign style_groups = city_entries | group_by_exp: "entry", "entry.ramen_style" %}
+    {% for style_group in style_groups %}
+      {% assign style = style_group.name %}
+      {% assign style_entries = style_group.items %}
       {% assign style_first = style_entries | first %}
 
       <div class="style-group">
@@ -32,7 +34,7 @@ permalink: /ramen/
         <ul class="entry-list">
           {% for entry in style_entries %}
           <li class="entry-item">
-            <a href="{{ entry.url | prepend: site.baseurl }}">
+            <a href="{{ entry.url }}">
               <span class="entry-title">{{ entry.title }}</span>
               <span class="entry-neighborhood">{{ entry.location.neighborhood }}</span>
               {% if entry.ramen_substyle != "" %}
