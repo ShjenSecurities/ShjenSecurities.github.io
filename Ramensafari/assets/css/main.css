@@ -142,9 +142,9 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
   padding: var(--space-md) var(--space-lg);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
-  gap: var(--space-lg);
+  gap: var(--space-sm);
   width: 100%;
 }
 
