@@ -486,9 +486,8 @@ a:hover { text-decoration: underline; }
   .lead-photo-wrap  { margin-bottom: var(--space-lg); }
   .entry-photos     { gap: var(--space-lg); margin-top: var(--space-lg); }
 
-  /* Stack the detail photo grid vertically */
-  .entry-photo-grid             { flex-direction: column; gap: var(--space-lg); }
-  .entry-photo-grid .entry-photo { aspect-ratio: auto; }
+  /* Keep detail photos side by side but tighten the gap */
+  .entry-photo-grid { gap: var(--space-sm); }
 }
 
 /* --- Reduced motion --- */
