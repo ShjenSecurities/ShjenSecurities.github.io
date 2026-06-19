@@ -154,6 +154,7 @@ a:hover { text-decoration: underline; }
   border: none;
   background: transparent;
   flex-shrink: 0;
+  pointer-events: none;
 }
 
 .site-title {
