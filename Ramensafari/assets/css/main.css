@@ -370,6 +370,14 @@ a:hover { text-decoration: underline; }
   width: 100%;
 }
 
+.michelin-star {
+  font-size: 0.7rem;
+  color: #b84040;
+  margin-left: 0.35em;
+  vertical-align: middle;
+  line-height: 1;
+}
+
 /* Lead photo — scene-setter above the journal page */
 .lead-photo-wrap {
   margin-bottom: var(--space-xl);

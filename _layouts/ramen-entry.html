@@ -47,7 +47,12 @@
       <div class="location-ja">{{ page.location.neighborhood_ja }}、{{ page.location.city_ja }} · {{ page.location.region_ja }}</div>
       {% endif %}
       {% if page.restaurant %}
-        <div class="entry-restaurant">{{ page.restaurant }}</div>
+        <div class="entry-restaurant">
+          {{ page.restaurant }}
+          {% if page.michelin_stars %}
+            <span class="michelin-star" title="Michelin Star">{% for i in (1..page.michelin_stars) %}★{% endfor %}</span>
+          {% endif %}
+        </div>
       {% endif %}
     </div>
 

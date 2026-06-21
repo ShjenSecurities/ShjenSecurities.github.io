@@ -35,7 +35,7 @@ permalink: /ramen/
           {% for entry in style_entries %}
           <li class="entry-item">
             <a href="{{ entry.url }}">
-              <span class="entry-title">{{ entry.title }}</span>
+              <span class="entry-title">{{ entry.title }}{% if entry.michelin_stars %}<span class="michelin-star" title="Michelin Star">★</span>{% endif %}</span>
               <span class="entry-neighborhood">{{ entry.location.neighborhood }}</span>
               {% if entry.ramen_substyle != "" %}
                 <span class="entry-substyle">{{ entry.ramen_substyle }}</span>

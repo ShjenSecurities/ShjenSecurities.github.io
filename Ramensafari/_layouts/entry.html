@@ -30,7 +30,12 @@
         {% endif %}
       </div>
       {% if page.restaurant %}
-        <div class="entry-restaurant">{{ page.restaurant }}</div>
+        <div class="entry-restaurant">
+          {{ page.restaurant }}
+          {% if page.michelin_stars %}
+            <span class="michelin-star" title="Michelin Star">{% for i in (1..page.michelin_stars) %}★{% endfor %}</span>
+          {% endif %}
+        </div>
       {% endif %}
     </div>
 
