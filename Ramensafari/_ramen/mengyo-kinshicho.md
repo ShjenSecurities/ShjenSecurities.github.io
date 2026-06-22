@@ -16,7 +16,7 @@ ramen_style_ja: "真鯛"
 ramen_substyle: ""
 restaurant: "Madai Mengyo"
 lead_photo: "/img/ramen/MadaiStoreFront2.jpeg"
-page_image: "/img/ramen/MadaiMengyo.png"
+page_image: "/img/ramen/MadaiMengyo2.png"
 photos:
   - "/img/ramen/MadaiRamen.png"
   - "/img/ramen/MadaiEmptyBowl.png"
