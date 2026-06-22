@@ -22,10 +22,6 @@ photos:
   - "/img/ramen/MadaiEmptyBowl.png"
 ---
 
-[Transcript goes here]
-
----
-
 - Sakura-smoked chashu pork
 - Flaked red sea bream
 - Soft egg
