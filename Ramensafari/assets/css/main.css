@@ -380,7 +380,9 @@ a:hover { text-decoration: underline; }
 
 /* Lead photo — scene-setter above the journal page */
 .lead-photo-wrap {
+  padding-bottom: var(--space-xl);
   margin-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border);
 }
 
 .lead-photo {
@@ -406,6 +408,8 @@ a:hover { text-decoration: underline; }
 /* Photo sequence below the journal page */
 .entry-photos {
   margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
