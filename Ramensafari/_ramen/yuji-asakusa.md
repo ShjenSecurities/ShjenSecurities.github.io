@@ -15,7 +15,7 @@ ramen_style: "Tonkotsu"
 ramen_style_ja: "豚骨"
 ramen_substyle: ""
 restaurant: "Yuji"
-lead_photo: "/img/ramen/YujiSign.jpg"
+lead_photo: "/img/ramen/YujiSign2.jpg"
 page_image: "/img/ramen/Yuji2.png"
 photos:
   - "/img/ramen/YujiRamen.jpg"
