@@ -385,7 +385,9 @@ a:hover { text-decoration: underline; }
 
 .lead-photo {
   width: 100%;
-  height: auto;
+  height: 520px;
+  object-fit: cover;
+  object-position: center top;
   display: block;
 }
 
