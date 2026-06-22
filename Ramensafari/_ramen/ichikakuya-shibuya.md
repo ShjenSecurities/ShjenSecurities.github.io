@@ -15,6 +15,7 @@ ramen_style: "Tonkotsu"
 ramen_style_ja: "豚骨"
 restaurant: "Ichikakuya"
 page_image: "/img/ramen/Ichikakuya.png"
+lead_photo: "/img/ramen/IchikakuyaStoreFront.png"
 photos:
   - "/img/ramen/IchikakuyaRamen.jpg"
   - "/img/ramen/IchikakuyaRamenEmpty.jpg"
