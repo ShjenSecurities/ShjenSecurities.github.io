@@ -13,7 +13,7 @@ city_order: 1
 style_order: 2
 ramen_style: "Tonkotsu"
 ramen_style_ja: "豚骨"
-restaurant: "Ichikakuya Ramen"
+restaurant: "Ichikakuya"
 page_image: "/img/ramen/Ichikakuya.png"
 photos:
   - "/img/ramen/IchikakuyaRamen.jpg"
