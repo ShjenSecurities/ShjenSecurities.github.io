@@ -10,7 +10,7 @@ location:
   neighborhood: "Kinshicho"
   neighborhood_ja: "錦糸町"
 city_order: 1
-style_order: 6
+style_order: 5
 ramen_style: "Madai"
 ramen_style_ja: "真鯛"
 ramen_substyle: ""
