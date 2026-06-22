@@ -16,7 +16,7 @@ ramen_style_ja: "豚骨"
 ramen_substyle: ""
 restaurant: "San Tora"
 page_image: "/img/ramen/SanTora-1.png"
-lead_photo: "/img/ramen/SanToraEntry.jpg"
+lead_photo: "/img/ramen/SanToraEntry2.jpg"
 photos:
   - "/img/ramen/SanToraRamen.jpg"
   - "/img/ramen/SanToraEgg.jpg"
