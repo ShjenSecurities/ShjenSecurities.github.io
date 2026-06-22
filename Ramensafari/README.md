@@ -82,7 +82,7 @@ ramen_style: "Tonkotsu / Shoyu / Shio / Miso / Tsukemen / Tai-men"
 ramen_substyle: "optional — Black Garlic / Wagyu / Ahi Bone / etc."
 restaurant: "optional — only if notable / named"
 city_order: 1          # travel sequence (1=Tokyo, 2=Shin-Yokohama, 3=Kyoto, 4=Osaka, 5=Kobe, 6=Hiroshima)
-style_order: 1         # order within city
+entry_order: 1         # chronological visit order — controls nav sequence
 page_image: /ramen/assets/pages/your-slug.png
 placeholder: true      # only on Kobe entry until filled in
 ```

@@ -10,7 +10,7 @@ location:
   neighborhood: "Shinjuku"
   neighborhood_ja: "新宿"
 city_order: 1
-style_order: 4
+entry_order: 4
 ramen_style: "Shoyu"
 ramen_style_ja: "醤油"
 ramen_substyle: ""

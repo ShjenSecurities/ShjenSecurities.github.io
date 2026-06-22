@@ -10,12 +10,13 @@ location:
   neighborhood: "Shibuya"
   neighborhood_ja: "渋谷"
 city_order: 1
-style_order: 2
+entry_order: 2
 ramen_style: "Tonkotsu"
 ramen_style_ja: "豚骨"
 restaurant: "Ichikakuya"
 page_image: "/img/ramen/Ichikakuya.png"
 lead_photo: "/img/ramen/IchikakuyaStoreFront.png"
+lead_photo_contained: true
 photos:
   - "/img/ramen/IchikakuyaRamen.jpg"
   - "/img/ramen/IchikakuyaRamenEmpty.jpg"

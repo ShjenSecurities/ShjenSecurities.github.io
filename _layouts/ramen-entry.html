@@ -58,7 +58,7 @@
 
     <!-- Lead photo: sets the scene before the journal page -->
     {% if page.lead_photo %}
-    <div class="lead-photo-wrap">
+    <div class="lead-photo-wrap{% if page.lead_photo_contained %} lead-photo-contained{% endif %}">
       <img
         src="{{ page.lead_photo | prepend: site.url }}"
         alt="{{ page.title }}"
@@ -117,7 +117,7 @@
 
     <!-- Entry navigation -->
     <nav class="entry-nav">
-      {% assign all_entries = site.ramen | where_exp: "e", "e.placeholder != true" | sort: "style_order" | sort: "city_order" %}
+      {% assign all_entries = site.ramen | where_exp: "e", "e.placeholder != true" | sort: "entry_order" | sort: "city_order" %}
       {% assign entry_count = all_entries | size %}
       {% for e in all_entries %}
         {% if e.slug == page.slug %}

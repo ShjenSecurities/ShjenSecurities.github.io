@@ -4,7 +4,7 @@ title: "Ramen Safari"
 permalink: /ramen/
 ---
 
-{% assign entries = site.ramen | where_exp: "entry", "entry.placeholder != true" | sort: "style_order" | sort: "city_order" %}
+{% assign entries = site.ramen | where_exp: "entry", "entry.placeholder != true" | sort: "entry_order" | sort: "city_order" %}
 {% assign city_groups = entries | group_by_exp: "entry", "entry.location.city" %}
 
 <div class="index-intro">

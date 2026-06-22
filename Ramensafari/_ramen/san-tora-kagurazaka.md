@@ -10,7 +10,7 @@ location:
   neighborhood: "Kagurazaka"
   neighborhood_ja: "神楽坂"
 city_order: 1
-style_order: 1
+entry_order: 1
 ramen_style: "Tonkotsu"
 ramen_style_ja: "豚骨"
 ramen_substyle: ""

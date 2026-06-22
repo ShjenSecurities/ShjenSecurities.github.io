@@ -10,7 +10,7 @@ location:
   neighborhood: "Asakusa"
   neighborhood_ja: "浅草"
 city_order: 1
-style_order: 3
+entry_order: 3
 ramen_style: "Tonkotsu"
 ramen_style_ja: "豚骨"
 ramen_substyle: ""

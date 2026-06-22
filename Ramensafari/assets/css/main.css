@@ -385,6 +385,12 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 
+.lead-photo-wrap.lead-photo-contained {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .lead-photo {
   width: 100%;
   height: auto;
