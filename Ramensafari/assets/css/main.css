@@ -420,6 +420,7 @@ a:hover { text-decoration: underline; }
 .entry-photo-grid {
   display: flex;
   gap: var(--space-md);
+  justify-content: center;
 }
 
 .entry-photo-grid .entry-photo {
