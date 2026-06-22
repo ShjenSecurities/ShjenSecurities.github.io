@@ -28,7 +28,8 @@ In discussions with the host, the topic of ramen quickly arose. I'm eager to fol
 
 ---
 
-- Braised pork
+- Sea bream broth
+- Sakura smoked chashu pork
 - Soft egg
 - Spinach
 - Negi
