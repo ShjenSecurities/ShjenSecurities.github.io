@@ -443,10 +443,32 @@ a:hover { text-decoration: underline; }
 }
 
 .entry-transcription summary {
-  font-size: 0.8rem;
-  color: var(--muted);
+  font-size: 0.85rem;
+  color: var(--accent);
   cursor: pointer;
   user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  letter-spacing: 0.03em;
+}
+
+.entry-transcription summary::-webkit-details-marker { display: none; }
+
+.entry-transcription summary::before {
+  content: '▸';
+  font-size: 0.75em;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.entry-transcription details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.entry-transcription summary:hover {
+  color: var(--ink);
 }
 
 .transcription-body {
@@ -467,7 +489,7 @@ a:hover { text-decoration: underline; }
   font-size: 0.875rem;
 }
 
-.nav-prev, .nav-next { color: var(--muted); }
+.nav-prev, .nav-next { color: var(--ink); font-size: 0.95rem; letter-spacing: 0.02em; }
 .nav-prev:hover, .nav-next:hover { color: var(--accent); text-decoration: none; }
 .nav-next { margin-left: auto; }
 
