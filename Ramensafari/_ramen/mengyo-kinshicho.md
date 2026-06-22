@@ -1,6 +1,6 @@
 ---
 layout: ramen-entry
-title: "Madai Ramen Mengyo"
+title: "Madai Mengyo"
 slug: "mengyo-kinshicho"
 location:
   city: "Tokyo"
@@ -14,7 +14,7 @@ style_order: 4
 ramen_style: "Madai"
 ramen_style_ja: "真鯛"
 ramen_substyle: ""
-restaurant: "Madai Ramen Mengyo"
+restaurant: "Madai Mengyo"
 lead_photo: "/img/ramen/MadaiStoreFront.png"
 page_image: "/img/ramen/MadaiMengyo.png"
 photos:
