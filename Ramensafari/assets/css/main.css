@@ -425,6 +425,7 @@ a:hover { text-decoration: underline; }
 .entry-photo-grid .entry-photo {
   flex: 1;
   min-width: 0;
+  max-width: 50%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
 }
